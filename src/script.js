@@ -45,7 +45,7 @@ function gamestart(){
 }
 document.querySelector("#roll").addEventListener('click', function(){
     var diceroll=Math.floor(Math.random()*6) + 1;
-    var slika='dice-'+diceroll+'.png';
+    var slika='../dice-'+diceroll+'.png';
     $("#rolling").attr("src",slika);
     document.querySelector(".rolling").style.display="block";
     if(diceroll!=1){
