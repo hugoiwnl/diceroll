@@ -22,5 +22,22 @@ For example, the first player, Donald, begins a turn with a roll of 5. Donald co
 
 ![Playing screen](playscreen.png)
 
+## Scoreboard
 
+Whenever you finish a game, the scores add to the 'Scoreboard', and the data is stored with localStorage so it is not just temporary. You can also delete scores and sort them
+by columns of your choice.
+
+![Scoreboard](scoreboard.png)
+
+## References
+
+In the references page, i described the idea behind the project and I wrote all references for it.
+
+![References](references.png)
+
+## Mobile 
+
+This project is also Mobile friendly, which you can check out in your browser or in the picture below.
+
+![Mobile](mobile.png)
 
