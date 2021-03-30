@@ -1,0 +1,508 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif; 
+    overflow: hidden;
+    background-image: url(./back6.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+header{
+    height: 30vh;
+    font-size: 50px;
+    color:greenyellow;
+    display: grid;
+    place-items: center;
+}
+
+.enter{
+    grid-area: enter;
+    
+    width: 40%;
+    margin: auto;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    color: #EB4D4D;
+}
+
+.player1{
+    grid-area: player1;
+    display: grid;
+    place-items: center;
+    
+    height: 20vh;
+}
+#player1{
+    width: 50%;
+    height: 20%;
+}
+.player2{
+    grid-area: player2;
+    display: grid;
+    place-items: center;
+    
+}
+#player2{
+    width: 50%;
+    height: 20%;
+}
+.start{
+    grid-area: star;
+    display: grid;
+    place-items: center;
+    height: 30vh;
+}
+#start{
+    margin-bottom: 50px;
+    font-size: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    color: #EB4D4D;
+}
+#start:hover{
+    font-weight: 600;
+}
+.btn-del{
+    color:#EB4D4D ;
+}
+footer{
+    display: flex;
+}
+.gamenew{
+    flex:1;
+    text-align: center;
+}
+#new{
+    font-size: 30px;
+    padding: 10px;
+    color:greenyellow;
+    width: 70%;
+    border-radius: 25px;
+}
+#new:hover{
+    background-color: #EB4D4D;
+}
+.scbb{
+    flex: 1;
+    text-align: center;
+}
+#scb1{
+    flex:1;
+    font-size: 30px;
+    padding: 10px;
+    color:greenyellow;
+    width: 70%;
+    border-radius: 25px;
+}
+#scb1:hover{
+    background-color: #EB4D4D;
+}
+.startgame{
+    width: 80%;
+    margin: auto;
+    height: 60vh;
+    display: grid;
+    background-color: rgba(245, 245, 220, .7);
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'enter enter '
+    'player1 player2'
+    'star star';
+}
+.endgame{
+    background-color: rgba(245, 245, 220, .7);
+    
+    width: 60%;
+    height: 50vh;
+    margin: auto;
+    display: none;
+}
+#winner{
+    display: grid;
+    place-items: center;
+    font-size: 70px;
+    padding-top:50px ;
+    color:  #EB4D4D;
+}
+#playagain{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    font-size: 35px;
+    padding-top: 9%;
+}
+#playagain1{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    font-size: 35px;
+    padding: 2%;
+    color: #EB4D4D;
+    
+}
+#scoreboard{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    font-size: 35px;
+    padding-top: 5%;
+}
+input{
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.p1{
+    grid-area: p1;
+    display: grid;
+    place-items: center;
+    height: 10vh;
+    font-size: 40px;
+}
+.p2{
+    grid-area: p2;
+    display: grid;
+    place-items: center;
+    height: 10vh;
+    font-size: 40px;
+}
+
+button{
+    font-family: 'Poppins', sans-serif; 
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.score1{
+    grid-area: score1;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    height: 10vh;
+    background-color: #EB4D4D;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.score2{
+    grid-area: score2;
+    display: grid;
+    place-items: center;
+    background-color: #EB4D4D;
+    font-size: 30px;
+    height: 10vh;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+    
+}
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'p1 p2'
+        'current1 current2'
+        'score1 score2';
+}
+.current1{
+    display:grid;
+    place-items: center;
+    font-size: 80px;
+    height: 30vh;
+    
+    
+}
+.current2{
+    display:grid;
+    place-items: center;
+    font-size: 80px;
+    
+    
+}
+
+.playgame{
+    background-color: rgba(245, 245, 220, .7);
+    
+    width: 60%;
+    margin: auto;
+    display: none;
+}
+.scores{
+    background-color: rgba(245, 245, 220, .7);
+    width: 60%;
+    height: 60vh;
+    margin: auto;
+    display: none;
+}
+#scoretitle{
+    font-size: 30px;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+}
+#sortclick{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+table {
+	border-collapse: collapse;
+	margin: auto;
+	width: 60%;
+	border: 1px solid #EB4D4D;
+}
+th {
+	text-align: center;
+    background-color: #EB4D4D;
+    color: #F2F0E1;
+}
+td {
+	text-align: center;
+	border: 1px solid #EB4D4D;
+    padding: 3px 7px 2px 7px;
+	/* Prevent text selection */
+	-webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+.current-label{
+    color: black;
+}
+.current-score1{
+    color: white;
+    padding: 5px;
+}
+.current-score2{
+    color: white;
+}
+.rolling{
+    position: absolute;
+    left: 46%;
+    top: 38%;
+    height: 20vh;
+    display: none;
+}
+.roll{
+    position: absolute;
+    left: 46%;
+    top: 68%;
+}
+#roll{
+    font-size: 30px;
+    font-weight: 400;
+}
+th:hover{
+    color: black;
+    cursor:pointer;
+}
+#roll:hover{
+    font-weight: 600;
+}
+#hold:hover{
+    font-weight: 600;
+}
+.hold{
+    position: absolute;
+    left: 47.5%;
+    top: 75%;
+}
+#hold{
+    font-size: 30px;
+    font-weight: 400;
+}
+#rolling{
+    height: 70%;
+}
+
+#references{
+    flex:1;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+.ref{
+    flex: 1;
+}
+#reff{
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+}
+#reff:hover{
+    background-color: #EB4D4D;
+}
+#playagain1:hover{
+    font-weight: 600;
+}
+@media screen and (max-width: 1317px){
+    .enter{
+        font-size: 20px;
+    }
+    #winner{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 945px){
+    #winner{
+        font-size: 40px;
+    }
+    #playagain{
+        font-size: 25px;
+    }
+    #scoreboard{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 748px){
+    #winner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 478px){
+    #playagain{
+        font-size: 20px;
+        padding-top: 15%;
+    }
+    #scoreboard{
+        font-size: 20px;
+        padding-top: 13%;
+    }
+    .scores{
+        width: 80%;
+    }
+    td{
+        padding: 2px 6px 1px 6px;
+    }
+}
+
+
+
+@media screen and (max-width: 878px){
+    .enter{
+        font-size: 15px;
+    }
+    #start{
+        font-size: 30px;
+        
+    }
+    #new,#scb1,#references{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 662px){
+    .enter{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center; 
+    }
+    .rolling{
+        position: absolute;
+        left: 44%;
+        top: 40%;
+    }
+    #rolling{
+        height: 60%;
+    }
+}
+
+@media screen and (max-width:1250px){
+    .p1, .p2{
+        font-size: 20px;
+    }
+    .current1, .current2{
+        font-size: 60px;
+    }
+    .current-label{
+        font-size: 20px;
+    }
+    .rolling{
+        
+        height: 15vh;
+    }
+    #roll, #hold{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width:850px){
+    .score1, .score2{
+        height: 8vh;
+    }
+    .current-label{
+        font-size: 15px;
+    }
+    .current-score1, .current-score2{
+        font-size: 20px;
+    }
+    #roll, #hold{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 667px){
+    .score1, .score2{
+        height: 5vh;
+    }
+    .current-label{
+        font-size: 7px;
+    }
+    .current-score1, .current-score2{
+        font-size: 10px;
+    }
+    #roll, #hold{
+        font-size: 10px;
+    }
+    #new,#scb1,#references{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width:559px){
+    header{
+        height: 30vh;
+        font-size: 30px;
+    }
+    
+    #rolling{
+        height: 50%;
+    }
+
+    #new,#scb1,#references{
+        font-size: 15px;
+    }
+
+    #scb1{
+        width: 100%;
+    }
+}
+@media screen and (max-width:440px){
+    #rolling{
+        height: 40%;
+    }
+}
+
+@media screen and (max-width:385px){
+    #sortclick{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Roll</title>
+</head>
+<body>
+    <header>
+        <h1>Roll Game</h1>
+        
+    </header>
+    
+    <div class="startgame">
+        <div class="enter">
+            <h3 id="enter">Enter the player names!</h3>
+        </div>
+        <div class="player1">
+            <input type="text" id="player1" placeholder="Player 1">
+        </div>
+        <div class="player2">
+            <input type="text" id="player2" placeholder="Player 2">
+        </div>
+        <div class="start">
+            <button id="start">START</button>
+        </div>
+    </div>
+    <div class="playgame">
+        <div class="board">
+            <div class="p1">
+                <h3 id="name1">Player 1</h3>
+            </div>
+            <div class="p2">
+                <h3 id="name2">Player 2</h3>
+            </div>
+            <div class="current1">
+                0
+            </div>
+            <div class="current2">
+                0
+            </div>
+            <div class="score1">
+                <div class="current-label">Current</div>
+                <div class="current-score1">0</div>
+            </div>
+            <div class="score2">
+                <div class="current-label">Current</div>
+                <div class="current-score2">0</div>
+            </div>
+            <div class="rolling">
+                <img src="./dice-1.png" alt="dice" id="rolling">
+            </div>
+            <div class="roll">
+                <button id="roll">Roll Dice</button>
+            </div>
+            <div class="hold">
+                <button id="hold">Hold</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="endgame">
+        <h1 id="winner">Winner</h1>
+        <button id="playagain">Play Again</button>
+        <button id="scoreboard">Scoreboard</button>
+    </div>
+    <div class="scores">
+        <button id="playagain1">Play Again</button>
+        <h3 id="scoretitle">Scoreboard</h3>
+        <h4 id="sortclick">Click on the column name to sort it</h4>
+        <table id="scores-table">
+			<tr>
+				<th>Player 1</th>
+				<th>Player 2</th>
+				<th>Score</th>
+                
+			</tr>
+		</table>
+        
+    </div>
+    <footer>
+        <div class="gamenew">
+            <button id="new">New Game</button>
+        </div>
+        <div class="scbb">
+            <button id="scb1">Scoreboard</button>
+        </div>
+        <div class="ref">
+            <h3 id="references"><a href="./references.html" id="reff">References</a></h3>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+</body>
+</html>
