@@ -37,7 +37,7 @@ In the references page, i described the idea behind the project and I wrote all 
 
 ## Mobile 
 
-This project is also Mobile friendly, which you can check out in your browser or in the picture below.
+This project is also Mobile friendly, which you can check out in your browser or in the picture below. (The model used was iPhone X)
 
 ![Mobile](mobile.png)
 
